@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+	<!--
+		Estudiante: 		José Andrés Gómez
+		Módulo:				1
+		Actividad Final: 	Flask
+	-->
+	<head>		
+		<link rel="stylesheet" type="text/css" href="css/estilos.css" >		
+		<meta charset="utf-8"/>
+		<title>Unidad 1 - AF: Pizzas Full Stack</title>		
+	</head>	
+	<body>
+		<div class="div_inline">
+			<img src="images/logo.jpg" alt="Pizza Full Stack">
+			<h1>Pizzas Full Stack</h1>
+		</div>		
+		<form id="frm" name="frm" method="POST" action="http://localhost:5000/pizza">
+		<h2>Datos del Cliente</h2>
+	
+		<div class="div_block_c">
+			<div class="componentes">
+				<label for="nombre" id="lblnombre">Nombre</label>
+				<input type="text" id="nombre" name="nombre"/>
+			</div>
+			<div class="componentes" >
+				<label for="apellido" id="lblapellido">Apellido</label>
+				<input type="text" id="apellido" name="apellido"/>
+			</div>
+			<div class="componentes">
+				<label for="fechanac" >Fecha Nacimiento</label>
+				<input type="date" id="fechanac" name="fechanac"/>
+			</div>
+			<div class="componentes">
+				<label for="telefono" >Teléfono</label>
+				<input type="text" id="telefono" name="telefono"/>
+			</div>
+			<div class="componentes">
+				<label for="direccion">Dirección</label>
+				<textarea id="direccion" name ="direccion"></textarea>
+			</div>
+		</div>
+
+		<h2>Datos del Pedido</h2>
+		
+		<div class="div_block_p">
+			<div class="componentes">
+				<label for="tamano">Tamaño Pizza</label>
+				<select id="tamano" name="tamano" > 
+					<option value="pequena">Pequeña</option>
+					<option value="mediana">Mediana</option>
+					<option value="grande">Grande</option>
+				</select>
+			</div>
+			<div class="componentes">
+				<label for="jamon">Jamón York</label><input type="checkbox" id ="jamon" name  ="jamon"/>
+				<label for="champinon">Champiñones</label><input type="checkbox" id ="champinon" name ="champinon"/>
+				<label for="pepperoni">Pepperoni</label><input type="checkbox" id ="pepperoni" name ="pepperoni"/>
+				<label for="aceitunas">Aceitunas</label><input type="checkbox" id ="aceitunas" name ="aceitunas"/>				
+			</div>
+		</div>
+		<div class="componentes">
+			<input type="submit"/>
+			<input type="reset"/>
+		</div>
+		</form>
+		<script src="js/jquery-3.6.0.min.js"></script>	
+		<script src="js/script_jquery.js"></script>
+	</body>
+	
+</html>

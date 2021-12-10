@@ -1,0 +1,5 @@
+.div_inline { display: inline-flex; }
+.div_block_c { display: block; background-color: #55ccff;width: 500px;}
+.div_block_p { display: block; background-color: #40ccbb;width: 500px;}
+.componentes { display: inline-block; margin: 5px;}
+*{font-family: verdana;}
